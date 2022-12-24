@@ -13,7 +13,38 @@ import unittest
 #  checks the function returns 100. Since a multiply function isn't defined,
 #  you have to define one with the correct input variable(s) and return
 #  statement. Create your functions below and not inside the test class.
+def function_1(num1, num2):
+    return num1 * num2
 
+def function_2():
+    return 'Welcome to Python'
+
+def function_3(num1, num2):
+    if num2 > num1:
+        return True
+    else:
+        return False
+
+def function_4(low, high):
+    for i in range(high):
+        random_number = random_number(low, high)
+        if random_number < 0 or random_number > 100:
+            return False
+
+def function_5(vegetable):
+    if vegetable == 'celery':
+        return True
+    else:
+        return False
+def function_6(time_of_day='morning'):
+    if time_of_day == 'morning':
+        return '8 am'
+    elif time_of_day == 'afternoon':
+        return '1 pm'
+    elif time_of_day == 'evening':
+        return '5 pm'
+    else:
+        return 'error'
 
 # ======================= DO NOT EDIT THE CODE BELOW =========================
 
