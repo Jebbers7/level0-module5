@@ -15,11 +15,12 @@ if __name__ == '__main__':
     #     of their name has been constructed.
     #     For example, if they enter their name as Alexander Hamilton
     #     their goofy name will be AlExAnDeR HaMiLtOn
+    newName = ""
     for i in range(len(name)):
         if i % 2 == 0:
-            name[i] = name[i].upper()
+            newName = newName + name[i].upper()
         else:
-            name[i] = name[i].lower()
+            newName = newName + name[i].lower()
     #  3. Show the user the goofy version of their name in a pop-up.
-    messagebox.showinfo("Goofy Name", "Your goofy name is " + name)
+    messagebox.showinfo("Goofy Name", "Your goofy name is " + newName)
     pass
